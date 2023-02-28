@@ -12,12 +12,12 @@ const SignUpScreen = ({navigation}) => {
 
   const handleOnSubmit = () => {
     if (email != '' && password != '' && confirmPassword != '') {
-      // if (password == confirmPassword) {
-      //   //   SignUp
-      //   signUp(email, password);
-      // } else {
-      //   Alert.alert('password did not match');
-      // }
+      if (password == confirmPassword) {
+        //   SignUp
+        signUp(email, password);
+      } else {
+        Alert.alert('password did not match');
+      }
     }
   };
 

@@ -10,9 +10,9 @@ const SignInScreen = ({navigation}) => {
   const [password, setPassword] = useState('');
 
   const handleOnSubmit = () => {
-    // if (email != '' && password != '') {
-    //   signIn(email, password);
-    // }
+    if (email != '' && password != '') {
+      signIn(email, password);
+    }
   };
 
   return (
