@@ -285,7 +285,8 @@ const AddQuestionScreen = ({navigation, route}) => {
           <Text style={{
             fontSize:20, 
             textAlign:'center',
-            color:COLORS.white
+            color:COLORS.white,
+            fontWeight:'bold'
           }}>Add Question
           </Text>
           <Text style={{
@@ -334,21 +335,25 @@ const AddQuestionScreen = ({navigation, route}) => {
               labelText="Correct Answer"
               onChangeText={val => setCorrectAnswer(val)}
               value={correctAnswer}
+              placeholderText="Enter Option 1"
             />
             <FormInput
               labelText="Option 2"
               onChangeText={val => setOptionTwo(val)}
               value={optionTwo}
+              placeholderText="Enter Option 2"
             />
             <FormInput
               labelText="Option 3"
               onChangeText={val => setOptionThree(val)}
               value={optionThree}
+              placeholderText="Enter Option 3"
             />
             <FormInput
               labelText="Option 4"
               onChangeText={val => setOptionFour(val)}
               value={optionFour}
+              placeholderText="Enter Option 4"
             />
           </View>
           <FormButton

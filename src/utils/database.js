@@ -35,3 +35,5 @@ export const getQuestionsByQuizId = currentQuizId => {
     .collection('QNA')
     .get();
 };
+
+
