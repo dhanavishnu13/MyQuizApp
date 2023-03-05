@@ -46,9 +46,9 @@ const HomeScreen = ({navigation}) => {
         }}>
             <Text style={{fontSize:20, color:COLORS.white}}>Quiz App</Text>
             <Text style={{
-                fontsize:20,
+                fontSize:20,
                 padding:10,
-                colo:COLORS.error,
+                color:COLORS.error,
             }}
             onPress={signOut}>
             Logout</Text>
@@ -87,8 +87,14 @@ const HomeScreen = ({navigation}) => {
             paddingVertical : 10,
             paddingHorizontal:30,
             borderRadius:50,
-            backgroundColor:COLORS.primary+'20'
-            }  }>
+            backgroundColor:COLORS.primary+'20',
+
+            }  }
+            onPress={() =>{
+                navigation.navigate('PlayQuizScreen',{
+                    quizId:quiz.id,
+                });
+        }}>
           <Text style={{color:COLORS.primary}}>Play</Text>
           </TouchableOpacity>
           </View> 
